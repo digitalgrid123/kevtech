@@ -29,8 +29,8 @@ body {
 .home-hero-image {
   width: 100%;
   border-radius: 20px;
-  height: 500px;
   overflow: hidden;
+  height: 100%;
 }
 .slider-btn-container {
   position: absolute;
@@ -376,9 +376,44 @@ a:hover {
 }
 
 .rotate {
-  width: 60px;
+  width: 40px;
   position: relative;
-  border: 2px solid #f3f3f3;
   border-radius: 50%;
-  height: 60px;
+  height: 40px;
+}
+
+.slideshow {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+.progress-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-circle-background {
+  fill: #eee;
+}
+
+.progress-circle-foreground {
+  fill: #f00;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 0.2s ease-in-out;
 }

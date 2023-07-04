@@ -316,5 +316,60 @@
       // Start the progress bar animation
       requestAnimationFrame(animateSVG);
     </script>
+
+    <!-- <script>
+      var slides = document.getElementsByClassName("slide");
+      var currentSlide = 0;
+
+      function showSlide(index) {
+        if (index >= slides.length) {
+          index = 0;
+        } else if (index < 0) {
+          index = slides.length - 1;
+        }
+
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+
+        slides[index].classList.add("active");
+        currentSlide = index;
+      }
+
+      // Automatic slideshow
+      var slideshowInterval = setInterval(function () {
+        showSlide(currentSlide + 1);
+      }, 3000);
+    </script>
+    <script>
+      const progressCircle = document.getElementById("progress-circle");
+      const animationDuration = 3000; // Duration in milliseconds to fill the progress bar
+      const framesPerSecond = 60; // Number of frames per second for the animation
+
+      let animationStartTime = null;
+
+      const animateSVG = (timestamp) => {
+        if (!animationStartTime) {
+          animationStartTime = timestamp;
+        }
+
+        const elapsed = timestamp - animationStartTime;
+        const progress = Math.min(elapsed / animationDuration, 1);
+        const dashOffset = 564.48 * (1 - progress);
+
+        progressCircle.setAttribute("stroke-dashoffset", dashOffset);
+
+        if (progress < 1) {
+          requestAnimationFrame(animateSVG);
+        } else {
+          // Animation complete, reset and start again
+          animationStartTime = null;
+          requestAnimationFrame(animateSVG);
+        }
+      };
+
+      // Start the animation
+      requestAnimationFrame(animateSVG);
+    </script> -->
   </body>
 </html>
