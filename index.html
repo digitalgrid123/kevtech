@@ -20,11 +20,11 @@
         <div class="header-align">
           <img
             class="header-logo"
-            src="/public/images/logo.png"
+            src="./public/images/logo.png"
             alt="header-logo"
             id="logo"
           />
-          <button class="menu-icon" onclick="toggleDrawer()">&#9776;</button>
+          <!-- <button class="menu-icon" onclick="toggleDrawer()">&#9776;</button> -->
           <!-- <nav class="navbar-links" style="margin-left: 20px">
             <div class="links">
               <a class="inner-header-links" href="#who_we_are">Who We Are</a>
@@ -268,7 +268,7 @@
         // Check if the rotation has reached 0px
         if (newDashOffset <= 0) {
           // Change the image in the separate container
-          imageContainer.innerHTML = `<img src="${images[currentImageIndex]}" alt="New Image">`;
+          imageContainer.innerHTML = `<img class="home-hero-image" src="${images[currentImageIndex]}" alt="New Image">`;
 
           // Increment the image index
           currentImageIndex = (currentImageIndex + 1) % images.length;
