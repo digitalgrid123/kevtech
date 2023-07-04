@@ -89,7 +89,7 @@ body {
 .center {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .title {
@@ -288,6 +288,7 @@ body {
   gap: 32px;
 }
 .link_apply {
+  gap: 10px;
   text-decoration: none;
   color: #0a63a4;
   cursor: pointer;
@@ -297,7 +298,8 @@ body {
 }
 
 .apply_btn {
-  font-family: Inter;
+  margin-top: 8px;
+  font-family: "Inter";
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
@@ -416,4 +418,31 @@ a:hover {
   transform-origin: center;
   transform: rotate(-90deg);
   transition: stroke-dashoffset 0.2s ease-in-out;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 80px;
+  margin-bottom: 32px;
+}
+
+.language_description {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+  opacity: 75%;
+}
+.adjust_description {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 86px 0 86px;
 }
