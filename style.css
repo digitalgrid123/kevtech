@@ -2,6 +2,11 @@
 :root {
   --color-background: #fafafa;
   --color-white: #fff;
+  --text-color: #333333;
+  --color-red: #cc5750;
+  --color-blue: #476599;
+  --border-light: #eaeaea;
+  --color-sky: #48b4da;
 }
 * {
   margin: 0;
@@ -13,6 +18,10 @@ body {
 }
 .no-padding {
   padding: 0px !important;
+}
+.marginBottom {
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 .main-padding {
   padding: 0px 75px;
@@ -186,7 +195,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   opacity: 75%;
-  color: #333333;
+  color: var(--text-color);
 
   margin-bottom: 24px;
 }
@@ -197,7 +206,7 @@ body {
   line-height: 54px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: var(--text-color);
   margin-bottom: 8px;
 }
 
@@ -208,7 +217,7 @@ body {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: var(--text-color);
   margin-bottom: 24px;
 }
 
@@ -219,7 +228,7 @@ body {
   line-height: 26px;
   letter-spacing: -1px;
   text-align: justify;
-  color: #333333;
+  color: var(--text-color);
 }
 .bold {
   font-weight: 600 !important;
@@ -249,7 +258,7 @@ body {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: var(--text-color);
   opacity: 75%;
 }
 .box_border {
@@ -257,26 +266,26 @@ body {
   height: 184px;
   padding: 32px;
   border-radius: 10px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-light);
   border-left: 6px solid;
 }
 .data_lightblue {
-  color: #476599;
+  color: var(--color-blue);
 }
 .border_lightblue {
-  border-left-color: #476599;
+  border-left-color: var(--color-blue);
 }
 .data_red {
-  color: #cc5750;
+  color: var(--color-red);
 }
 .border_red {
-  border-left-color: #cc5750;
+  border-left-color: var(--color-red);
 }
 .data_sky {
-  color: #48b4da;
+  color: var(--color-sky);
 }
 .border_sky {
-  border-left-color: #48b4da;
+  border-left-color: var(--color-sky);
 }
 .gap {
   display: flex;
@@ -308,7 +317,7 @@ body {
 .box_work {
   padding: 32px;
   border-radius: 10px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-light);
   gap: 12px;
 }
 a:hover {
@@ -322,7 +331,7 @@ a:hover {
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: var(--text-color);
 }
 .approx_heading {
   font-family: Inter;
@@ -339,7 +348,7 @@ a:hover {
 .read_box {
   padding: 25px;
   border-radius: 10px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-light);
 }
 .adjust_col {
   padding: 0px 105px 0px 105px;
@@ -435,7 +444,7 @@ a:hover {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
-  color: #333333;
+  color: var(--text-color);
   opacity: 75%;
 }
 .adjust_description {
@@ -454,7 +463,7 @@ a:hover {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: var(--text-color);
   opacity: 75%;
   margin-bottom: 4px;
 }
@@ -470,7 +479,7 @@ a:hover {
   width: 505px;
   height: 46px;
   border-radius: 8px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-light);
   padding: 12px;
 
   font-family: Inter;
@@ -489,14 +498,14 @@ a:hover {
   line-height: 39px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: var(--text-color);
 }
 .text_area {
   padding: 12px;
   width: 505px;
   height: 146px;
   border-radius: 8px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-light);
   gap: 10px;
 }
 
@@ -504,10 +513,10 @@ a:hover {
   position: relative;
   width: 100%;
   height: 617px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 64px;
   border-radius: 10px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-light);
   top: -217px;
 }
 .send_btn {
@@ -518,9 +527,9 @@ a:hover {
   letter-spacing: 0em;
   text-align: left;
   opacity: 50%;
-  color: #333333;
+  color: var(--text-color);
   border: none;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 .flex_end {
   display: flex;
@@ -541,25 +550,25 @@ a:hover {
   border: 1px solid #e6e6e6;
 }
 .dot_blue {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   width: 20px;
   height: 20px;
   border-radius: 11px;
-  border: 2px solid #476599;
+  border: 2px solid var(--color-blue);
 }
 .dot_red {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   width: 20px;
   height: 20px;
   border-radius: 11px;
-  border: 2px solid #cc5750;
+  border: 2px solid var(--color-red);
 }
 .dot_sky {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   width: 20px;
   height: 20px;
   border-radius: 11px;
-  border: 2px solid #48b4da;
+  border: 2px solid var(--color-sky);
 }
 
 .story_box {
@@ -627,7 +636,7 @@ a:hover {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: var(--text-color);
   margin-bottom: 4px;
 }
 .team_heading2 {
@@ -638,7 +647,7 @@ a:hover {
   letter-spacing: 0em;
   text-align: left;
   opacity: 75%;
-  color: #333333;
+  color: var(--text-color);
   margin-bottom: 24px;
 }
 .team_img {
@@ -664,9 +673,9 @@ a:hover {
 .team_box {
   padding: 16px;
   width: 100%;
-  border-left: 2px solid #eaeaea;
-  border-bottom: 2px solid #eaeaea;
-  border-right: 2px solid #eaeaea;
+  border-left: 2px solid var(--border-light);
+  border-bottom: 2px solid var(--border-light);
+  border-right: 2px solid var(--border-light);
 }
 
 .team_gap {
@@ -700,24 +709,24 @@ a:hover {
   margin-left: 24px;
   width: 10px;
   height: 10px;
-  border: 2px solid #cc5750;
-  background-color: #cc5750;
+  border: 2px solid var(--color-red);
+  background-color: var(--color-red);
   border-radius: 10px;
 }
 .promise_blue {
   margin-right: 24px;
   width: 10px;
   height: 10px;
-  border: 2px solid #476599;
-  background-color: #476599;
+  border: 2px solid var(--color-blue);
+  background-color: var(--color-blue);
   border-radius: 10px;
 }
 .promise_sky {
   margin-right: 24px;
   width: 10px;
   height: 10px;
-  border: 2px solid #48b4da;
-  background-color: #48b4da;
+  border: 2px solid var(--color-sky);
+  background-color: var(--color-sky);
   border-radius: 10px;
 }
 
@@ -726,7 +735,7 @@ a:hover {
   width: 76px;
   height: 54px;
   text-align: center;
-  align-items: centr;
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -736,7 +745,7 @@ a:hover {
   height: 65px;
 
   border-radius: 20px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-light);
 }
 .icon_text {
   margin-top: 12px;
@@ -746,7 +755,7 @@ a:hover {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: center;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .process_icon {
