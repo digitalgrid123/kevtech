@@ -111,9 +111,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.padding {
-  margin: 0px 140px 60px 140px;
-}
+
 .marginTop {
   margin-top: 75px;
 }
@@ -807,10 +805,6 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .padding {
-    margin: 0;
-  }
-
   .direction_col {
     padding-bottom: 14px;
     flex-direction: column;
