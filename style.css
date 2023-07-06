@@ -747,11 +747,12 @@ a:hover {
   width: 100%;
 }
 
+.col {
+  flex: 0 0 20%; /* Set the width of each column to 20% for five columns in a row */
+  padding: 15px; /* Adjust the padding according to your needs */
+}
+
 @media (max-width: 768px) {
-  .direction_col {
-    padding-bottom: 14px;
-    flex-direction: column;
-  }
   .links_gap {
     display: none;
   }
