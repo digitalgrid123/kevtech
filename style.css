@@ -747,9 +747,17 @@ a:hover {
   width: 100%;
 }
 
-.col {
-  flex: 0 0 20%; /* Set the width of each column to 20% for five columns in a row */
-  padding: 15px; /* Adjust the padding according to your needs */
+/* .col {
+  flex: 0 0 20%;
+  padding: 15px;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 64px;
+  margin-top: 75px;
 }
 
 @media (max-width: 768px) {
@@ -777,5 +785,8 @@ a:hover {
 
   .team_gap {
     flex-direction: column;
+  }
+  .slideshow {
+    height: 300px;
   }
 }
