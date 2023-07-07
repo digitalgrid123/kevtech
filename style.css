@@ -762,6 +762,13 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .mobile_direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+  }
   .input_form {
     top: 0px;
   }
