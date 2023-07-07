@@ -753,10 +753,25 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .input_form {
+    top: 0px;
+  }
+  .input_type {
+    width: 100%;
+  }
+  .text_area {
+    width: 100%;
+  }
   .links_gap {
     display: none;
   }
   .home-banner-box {
-    width: 60%;
+    width: 95%;
+  }
+  .home-hero-image {
+    min-height: 300px;
+  }
+  .main-padding {
+    padding: 0px 15px;
   }
 }
