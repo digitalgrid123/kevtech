@@ -797,4 +797,7 @@ a:hover {
   .slideshow {
     height: 300px;
   }
+  .adjust_col {
+    padding: 0;
+  }
 }
