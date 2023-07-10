@@ -801,4 +801,7 @@ a:hover {
   .adjust_col {
     padding: 0;
   }
+  .grid-container {
+    margin-bottom: 32px;
+  }
 }
