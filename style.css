@@ -569,24 +569,12 @@ a:hover {
   border: 1px solid #e6e6e6;
 }
 .dot_blue {
-  background-color: var(--color-white);
-  width: 20px;
-  height: 20px;
-  border-radius: 11px;
   border: 2px solid var(--color-blue);
 }
 .dot_red {
-  background-color: var(--color-white);
-  width: 20px;
-  height: 20px;
-  border-radius: 11px;
   border: 2px solid var(--color-red);
 }
 .dot_sky {
-  background-color: var(--color-white);
-  width: 20px;
-  height: 20px;
-  border-radius: 11px;
   border: 2px solid var(--color-sky);
 }
 
@@ -596,6 +584,9 @@ a:hover {
   height: 117px;
   gap: 16px;
 }
+.text_align {
+  text-align: right;
+}
 
 .story_heading {
   font-family: "Inter";
@@ -603,7 +594,6 @@ a:hover {
   font-weight: 900;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: left;
 }
 .story_paragraph {
   font-family: "Inter";
@@ -611,7 +601,6 @@ a:hover {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0em;
-  text-align: left;
 }
 .flex_center {
   position: relative;
@@ -647,7 +636,7 @@ a:hover {
 .margin_adjust {
   margin-top: 180px;
   margin-bottom: 80px;
-  width: 90%;
+  width: 100%;
 }
 .team_heading1 {
   font-family: Inter;
@@ -771,6 +760,38 @@ a:hover {
   width: 100%;
 }
 
+.dot {
+  background-color: var(--color-white);
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  margin: 0 10px;
+}
+
+.vertical-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 200px;
+  border-radius: 1px;
+  background: #e6e6e6;
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.dot-with-box.story_box {
+  padding-left: 35px;
+}
+
+.mobile_version {
+  display: none;
+}
+.desktop_version {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .mobile_direction {
     display: flex;
@@ -800,6 +821,9 @@ a:hover {
   .main-padding {
     padding: 0px 15px;
   }
+  .desktop_version {
+    display: none;
+  }
 
   .team_gap {
     flex-direction: column;
@@ -812,5 +836,13 @@ a:hover {
   }
   .grid-container {
     margin-bottom: 32px;
+  }
+  .story_box {
+    padding-left: 35px;
+  }
+
+  .mobile_version {
+    display: block;
+    margin-top: 64px;
   }
 }
