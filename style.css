@@ -23,6 +23,9 @@ a {
 .bold {
   font-weight: 600 !important;
 }
+.left {
+  left: 8%;
+}
 
 .margintb {
   margin-top: 80px;
@@ -206,7 +209,9 @@ a {
   justify-content: center;
   height: 100vh;
 }
-
+.kevtech_icons {
+  width: 100%;
+}
 #image {
   width: 100%;
   opacity: 0;
@@ -760,6 +765,10 @@ a:hover {
   grid-gap: 20px;
   margin-bottom: 64px;
   margin-top: 75px;
+}
+
+.article {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
